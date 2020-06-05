@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/playersName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="playersName"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/playersPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="playersPosition"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playersName" />
+
+        <TextView
+            android:id="@+id/dateOfBirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dateOfBirth"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playersPosition" />
+
+        <TextView
+            android:id="@+id/playersNationality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="playersNationality"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateOfBirth" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activties.teamDetails.TeamDetails">
+
+        <ImageView
+            android:id="@+id/teamIcon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/teamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="teamName"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toEndOf="@+id/teamIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/teamWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="teamWebsite"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/teamName"
+            app:layout_constraintTop_toBottomOf="@+id/teamName" />
+
+        <TextView
+            android:id="@+id/teamAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="teamAddress"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/teamWebsite"
+            app:layout_constraintTop_toBottomOf="@+id/teamWebsite" />
+
+        <TextView
+            android:id="@+id/teamMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="teamMobile"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/teamAddress"
+            app:layout_constraintTop_toBottomOf="@+id/teamAddress" />
+
+        <TextView
+            android:id="@+id/venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="venue"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/teamMobile"
+            app:layout_constraintTop_toBottomOf="@+id/teamMobile" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Squad : "
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/venue" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/squadList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

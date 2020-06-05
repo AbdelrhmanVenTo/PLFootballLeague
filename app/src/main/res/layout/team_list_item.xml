@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/teamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="teamName"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/teamWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="teamWebsite"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teamName" />
+
+        <TextView
+            android:id="@+id/color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="color"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teamWebsite" />
+
+        <TextView
+            android:id="@+id/venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="venue"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/color" />
+
+        <TextView
+            android:id="@+id/allTeamPlayers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="allTeamPlayers"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/venue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>
